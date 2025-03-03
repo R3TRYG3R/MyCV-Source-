@@ -17,17 +17,6 @@ const Home = () => {
       <h1 className="neon-text">Welcome to My CV</h1>
 
       <p className="subtitle typing">Frontend Developer | React & TypeScript</p>
-
-      <div className="button-container">
-        <a href="/cv.png" download className="neon-button">
-          Download CV
-        </a>
-
-        {/* Ссылка на контакты */}
-        <a href="/additional" className="neon-button">
-          Contact Me
-        </a>
-      </div>
     </motion.section>
   );
 };
