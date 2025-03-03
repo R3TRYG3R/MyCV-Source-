@@ -1,0 +1,134 @@
+/* Глобальные стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Orbitron", sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: #0a0a0a;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  body, html {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  
+  .app-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1800px;
+    min-height: 90vh;
+    background: rgba(20, 20, 20, 0.95);
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0, 255, 204, 0.4);
+  }
+  
+  .navbar {
+    width: 250px;
+    padding: 20px;
+    background: rgba(15, 15, 15, 0.95);
+    border-right: 3px solid #00ffcc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .nav-link {
+    color: #00ffcc;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 14px 24px;
+    white-space: nowrap;
+    text-align: center;
+    transition: 0.3s;
+    border-radius: 8px;
+  }
+  
+  .nav-link:hover {
+    background: rgba(0, 255, 204, 0.2);
+    text-shadow: 0px 0px 10px #00ffcc;
+  }
+  
+  .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 90vh;
+    
+    width: inherit;
+    max-width: inherit;
+    
+    padding: 0 20px 0 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  
+  h1, h2 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .neon-button {
+    background: transparent;
+    border: 2px solid #00ffcc;
+    padding: 16px 32px;
+    color: #00ffcc;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.3s;
+    margin-top: 20px;
+    border-radius: 8px;
+  }
+  
+  .neon-button:hover {
+    background: #00ffcc;
+    color: #0a0a0a;
+    box-shadow: 0px 0px 15px #00ffcc;
+  }
+  
+  @media (max-width: 768px) {
+    .app-container {
+      flex-direction: column;
+      max-width: 100%;
+      min-height: 100vh;
+    }
+  
+    .navbar {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between; 
+      border-right: none;
+      border-bottom: 3px solid #00ffcc;
+      padding: 10px 15px;
+      flex-wrap: wrap;
+    }
+  
+    .nav-link {
+      font-size: 16px;
+      padding: 8px 12px;
+      flex: 1; 
+      text-align: center;
+    }
+  
+    .content {
+      padding: 40px;
+      min-height: calc(100vh - 60px);
+      max-width: 95%;
+    }
+  }
