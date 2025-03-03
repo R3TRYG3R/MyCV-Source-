@@ -27,7 +27,7 @@ const AnimatedRoutes = () => {
         variants={pageVariants}
       >
         <Routes location={location} key={location.pathname}>
-          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/experience" element={<Experience />} />
@@ -39,12 +39,12 @@ const AnimatedRoutes = () => {
   );
 };
 
-function App() {
+function App(){
   return (
     <Router>
       <div className="app-container featured-layout">
         <nav className="navbar">
-          <NavLink to="/" className="nav-link">Home</NavLink>
+          <NavLink to="/home" className="nav-link">Home</NavLink>
           <NavLink to="/about" className="nav-link">About</NavLink>
           <NavLink to="/skills" className="nav-link">Skills</NavLink>
           <NavLink to="/experience" className="nav-link">Experience</NavLink>
